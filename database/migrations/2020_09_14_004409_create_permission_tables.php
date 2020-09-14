@@ -24,6 +24,7 @@ class CreatePermissionTables extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('guard_name')->nullable();
+            $table->string('route')->nullable();
             $table->text('description')->nullable();
             $table->string('variant');
             $table->boolean('is_system')->default(false);
@@ -35,7 +36,6 @@ class CreatePermissionTables extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('guard_name')->nullable();
-            $table->string('route')->nullable();
             $table->string('description')->nullable();
             $table->string('special')->nullable();
             $table->timestamps();

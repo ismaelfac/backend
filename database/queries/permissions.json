@@ -56,7 +56,7 @@
       "is_system": true
     },
     {
-      "name": "Imprimir",
+      "name": "Imprimir Usuarios",
       "guard_name": "",
       "route": "users.print",
       "description": "Imprimir Usuarios",
@@ -64,7 +64,7 @@
       "is_system": true
     },
     {
-      "name": "Exportar",
+      "name": "Exportar Usuarios",
       "guard_name": "",
       "route": "users.export",
       "description": "Exportar Usuarios",
@@ -112,7 +112,7 @@
       "is_system": true
     },
     {
-      "name": "Imprimir",
+      "name": "Imprimir Roles",
       "guard_name": "",
       "route": "roles.print",
       "description": "Imprimir Roles",
@@ -120,7 +120,7 @@
       "is_system": true
     },
     {
-      "name": "Exportar",
+      "name": "Exportar Roles",
       "guard_name": "",
       "route": "roles.export",
       "description": "Exportar Roles",
@@ -168,7 +168,7 @@
       "is_system": true
     },
     {
-      "name": "Imprimir",
+      "name": "Imprimir Permisos",
       "guard_name": "",
       "route": "permissions.print",
       "description": "Imprimir Permisos",
@@ -176,7 +176,7 @@
       "is_system": true
     },
     {
-      "name": "Exportar",
+      "name": "Exportar Permisos",
       "guard_name": "",
       "route": "permissions.export",
       "description": "Exportar Permisos",
@@ -224,7 +224,7 @@
       "is_system": false
     },
     {
-      "name": "Imprimir",
+      "name": "Imprimir Clientes",
       "guard_name": "",
       "route": "customers.print",
       "description": "Imprimir Clientes",
@@ -232,66 +232,10 @@
       "is_system": false
     },
     {
-      "name": "Exportar",
+      "name": "Exportar Clientes",
       "guard_name": "",
       "route": "customers.export",
       "description": "Exportar Clientes",
-      "variant": "danger",
-      "is_system": false
-    },
-    {
-      "name": "Navegar Propiedades",
-      "guard_name": "",
-      "route": "properties.index",
-      "description": "Lista los Propiedades",
-      "variant": "success",
-      "is_system": false
-    },
-    {
-      "name": "Crear Propiedades",
-      "guard_name": "",
-      "route": "properties.create",
-      "description": "Puede crear los Propiedades",
-      "variant": "success",
-      "is_system": false
-    },
-    {
-      "name": "Ver detalle de Propiedades",
-      "guard_name": "",
-      "route": "properties.show",
-      "description": "Ver el detalle de los Propiedades",
-      "variant": "success",
-      "is_system": false
-    },
-    {
-      "name": "Edición de Propiedades",
-      "guard_name": "",
-      "route": "properties.edit",
-      "description": "Editar los Propiedades",
-      "variant": "success",
-      "is_system": false
-    },
-    {
-      "name": "Eliminar Propiedades",
-      "guard_name": "",
-      "route": "properties.destroy",
-      "description": "Eliminar los Propiedades",
-      "variant": "success",
-      "is_system": false
-    },
-    {
-      "name": "Imprimir",
-      "guard_name": "",
-      "route": "properties.print",
-      "description": "Imprimir Propiedades",
-      "variant": "danger",
-      "is_system": false
-    },
-    {
-      "name": "Exportar",
-      "guard_name": "",
-      "route": "properties.export",
-      "description": "Exportar Propiedades",
       "variant": "danger",
       "is_system": false
     },
@@ -336,7 +280,7 @@
       "is_system": true
     },
     {
-      "name": "Imprimir",
+      "name": "Imprimir Paises",
       "guard_name": "",
       "route": "countries.print",
       "description": "Imprimir",
@@ -344,7 +288,7 @@
       "is_system": true
     },
     {
-      "name": "Exportar",
+      "name": "Exportar Paises",
       "guard_name": "",
       "route": "countries.export",
       "description": "Exportar",
