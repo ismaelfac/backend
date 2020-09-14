@@ -1,0 +1,594 @@
+[
+    {
+      "name": "Inicio",
+      "guard_name": "",
+      "route": "home",
+      "description": "Ver el home",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Panel",
+      "guard_name": "",
+      "route": "parameters",
+      "description": "Ver el panel",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Navegar Usuarios",
+      "guard_name": "",
+      "route": "users.index",
+      "description": "Lista los usuarios del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Crear Usuarios",
+      "guard_name": "",
+      "route": "users.create",
+      "description": "Puede crear los usuarios del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Ver detalle de Usuarios",
+      "guard_name": "",
+      "route": "users.show",
+      "description": "Ver el detalle de los usuarios del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Edición de Usuarios",
+      "guard_name": "",
+      "route": "users.edit",
+      "description": "Editar los usuarios del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Eliminar Usuarios",
+      "guard_name": "",
+      "route": "users.destroy",
+      "description": "Eliminar los usuarios del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Imprimir",
+      "guard_name": "",
+      "route": "users.print",
+      "description": "Imprimir Usuarios",
+      "variant": "danger",
+      "is_system": true
+    },
+    {
+      "name": "Exportar",
+      "guard_name": "",
+      "route": "users.export",
+      "description": "Exportar Usuarios",
+      "variant": "danger",
+      "is_system": true
+    },
+    {
+      "name": "Navegar Roles",
+      "guard_name": "",
+      "route": "roles.index",
+      "description": "Lista los roles del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Crear roles",
+      "guard_name": "",
+      "route": "roles.create",
+      "description": "Puede crear los roles del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Ver detalle de roles",
+      "guard_name": "",
+      "route": "roles.show",
+      "description": "Ver el detalle de los roles del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Edición de roles",
+      "guard_name": "",
+      "route": "roles.edit",
+      "description": "Editar los roles del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Eliminar roles",
+      "guard_name": "",
+      "route": "roles.destroy",
+      "description": "Eliminar los roles del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Imprimir",
+      "guard_name": "",
+      "route": "roles.print",
+      "description": "Imprimir Roles",
+      "variant": "danger",
+      "is_system": true
+    },
+    {
+      "name": "Exportar",
+      "guard_name": "",
+      "route": "roles.export",
+      "description": "Exportar Roles",
+      "variant": "danger",
+      "is_system": true
+    },
+    {
+      "name": "Navegar permisos",
+      "guard_name": "",
+      "route": "permissions.index",
+      "description": "Lista los permisos del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Crear permisos",
+      "guard_name": "",
+      "route": "permissions.create",
+      "description": "Puede crear los permisos del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Ver detalle de permisos",
+      "guard_name": "",
+      "route": "permissions.show",
+      "description": "Ver el detalle de los permisos del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Edición de permisos",
+      "guard_name": "",
+      "route": "permissions.edit",
+      "description": "Editar los permisos del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Eliminar permisos",
+      "guard_name": "",
+      "route": "permissions.destroy",
+      "description": "Eliminar los permisos del sistema",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Imprimir",
+      "guard_name": "",
+      "route": "permissions.print",
+      "description": "Imprimir Permisos",
+      "variant": "danger",
+      "is_system": true
+    },
+    {
+      "name": "Exportar",
+      "guard_name": "",
+      "route": "permissions.export",
+      "description": "Exportar Permisos",
+      "variant": "danger",
+      "is_system": true
+    },
+    {
+      "name": "Navegar Clientes",
+      "guard_name": "",
+      "route": "customers.index",
+      "description": "Lista los Clientes",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Crear Clientes",
+      "guard_name": "",
+      "route": "customers.create",
+      "description": "Puede crear los clientes",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Ver detalle de Clientes",
+      "guard_name": "",
+      "route": "customers.show",
+      "description": "Ver el detalle de los clientes",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Edición de Clientes",
+      "guard_name": "",
+      "route": "customers.edit",
+      "description": "Editar los Clientes",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Eliminar Clientes",
+      "guard_name": "",
+      "route": "customers.destroy",
+      "description": "Eliminar los Clientes",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Imprimir",
+      "guard_name": "",
+      "route": "customers.print",
+      "description": "Imprimir Clientes",
+      "variant": "danger",
+      "is_system": false
+    },
+    {
+      "name": "Exportar",
+      "guard_name": "",
+      "route": "customers.export",
+      "description": "Exportar Clientes",
+      "variant": "danger",
+      "is_system": false
+    },
+    {
+      "name": "Navegar Propiedades",
+      "guard_name": "",
+      "route": "properties.index",
+      "description": "Lista los Propiedades",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Crear Propiedades",
+      "guard_name": "",
+      "route": "properties.create",
+      "description": "Puede crear los Propiedades",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Ver detalle de Propiedades",
+      "guard_name": "",
+      "route": "properties.show",
+      "description": "Ver el detalle de los Propiedades",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Edición de Propiedades",
+      "guard_name": "",
+      "route": "properties.edit",
+      "description": "Editar los Propiedades",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Eliminar Propiedades",
+      "guard_name": "",
+      "route": "properties.destroy",
+      "description": "Eliminar los Propiedades",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Imprimir",
+      "guard_name": "",
+      "route": "properties.print",
+      "description": "Imprimir Propiedades",
+      "variant": "danger",
+      "is_system": false
+    },
+    {
+      "name": "Exportar",
+      "guard_name": "",
+      "route": "properties.export",
+      "description": "Exportar Propiedades",
+      "variant": "danger",
+      "is_system": false
+    },
+    {
+      "name": "Navegar Paises",
+      "guard_name": "",
+      "route": "countries.index",
+      "description": "Lista los Paises",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Crear Paises",
+      "guard_name": "",
+      "route": "countries.create",
+      "description": "Puede crear los Paises",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Ver detalle de Paises",
+      "guard_name": "",
+      "route": "countries.show",
+      "description": "Ver el detalle de los Paises",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Edición de Paises",
+      "guard_name": "",
+      "route": "countries.edit",
+      "description": "Editar los Paises",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Eliminar Paises",
+      "guard_name": "",
+      "route": "countries.destroy",
+      "description": "Eliminar los Paises",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Imprimir",
+      "guard_name": "",
+      "route": "countries.print",
+      "description": "Imprimir",
+      "variant": "danger",
+      "is_system": true
+    },
+    {
+      "name": "Exportar",
+      "guard_name": "",
+      "route": "countries.export",
+      "description": "Exportar",
+      "variant": "danger",
+      "is_system": true
+    },
+    {
+      "name": "Navegar Departamentos",
+      "guard_name": "",
+      "route": "departaments.index",
+      "description": "Lista los Departamentos",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Crear Departamentos",
+      "guard_name": "",
+      "route": "departaments.create",
+      "description": "Puede crear los Departamentos",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Ver detalle de Departamentos",
+      "guard_name": "",
+      "route": "departaments.show",
+      "description": "Ver el detalle de los Departamentos",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Edición de Departamentos",
+      "guard_name": "",
+      "route": "departaments.edit",
+      "description": "Editar los Departamentos",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Eliminar Departamentos",
+      "guard_name": "",
+      "route": "departaments.destroy",
+      "description": "Eliminar los Departamentos",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Navegar Municipios",
+      "guard_name": "",
+      "route": "municipalities.index",
+      "description": "Lista los Municipios",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Crear Municipios",
+      "guard_name": "",
+      "route": "municipalities.create",
+      "description": "Puede crear los Municipios",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Ver detalle de Municipios",
+      "guard_name": "",
+      "route": "municipalities.show",
+      "description": "Ver el detalle de los Municipios",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Edición de Municipios",
+      "guard_name": "",
+      "route": "municipalities.edit",
+      "description": "Editar los Municipios",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Eliminar Municipios",
+      "guard_name": "",
+      "route": "municipalities.destroy",
+      "description": "Eliminar los Municipios",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Navegar Barrios",
+      "guard_name": "",
+      "route": "neighborhoods.index",
+      "description": "Lista los Barrios",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Crear Barrios",
+      "guard_name": "",
+      "route": "neighborhoods.create",
+      "description": "Puede crear los Barrios",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Ver detalle de Barrios",
+      "guard_name": "",
+      "route": "neighborhoods.show",
+      "description": "Ver el detalle de los Barrios",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Edición de Barrios",
+      "guard_name": "",
+      "route": "neighborhoods.edit",
+      "description": "Editar los Barrios",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Eliminar Barrios",
+      "guard_name": "",
+      "route": "neighborhoods.destroy",
+      "description": "Eliminar los Barrios",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Navegar Localidades",
+      "guard_name": "",
+      "route": "localities.index",
+      "description": "Lista los Localidades",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Crear Localidades",
+      "guard_name": "",
+      "route": "localities.create",
+      "description": "Puede crear los Localidades",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Ver detalle de Localidades",
+      "guard_name": "",
+      "route": "localities.show",
+      "description": "Ver el detalle de los Localidades",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Edición de Localidades",
+      "guard_name": "",
+      "route": "localities.edit",
+      "description": "Editar los Localidades",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Eliminar Localidades",
+      "guard_name": "",
+      "route": "localities.destroy",
+      "description": "Eliminar los Localidades",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Navegar Propietarios",
+      "guard_name": "",
+      "route": "owner.index",
+      "description": "Lista los Propietarios",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Crear Propietarios",
+      "guard_name": "",
+      "route": "owner.create",
+      "description": "Puede crear los Propietarios",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Ver detalle de Propietarios",
+      "guard_name": "",
+      "route": "owner.show",
+      "description": "Ver el detalle de los Propietarios",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Edición de Propietarios",
+      "guard_name": "",
+      "route": "owner.edit",
+      "description": "Editar los Propietarios",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Eliminar Propietarios",
+      "guard_name": "",
+      "route": "owner.destroy",
+      "description": "Eliminar los Propietarios",
+      "variant": "success",
+      "is_system": false
+    },
+    {
+      "name": "Navegar Contratos",
+      "guard_name": "",
+      "route": "contracts.index",
+      "description": "Lista los Contratos",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Crear Contratos",
+      "guard_name": "",
+      "route": "contracts.create",
+      "description": "Puede crear los Contratos",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Ver detalle de Contratos",
+      "guard_name": "",
+      "route": "contracts.show",
+      "description": "Ver el detalle de los Contratos",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Edición de Contratos",
+      "guard_name": "",
+      "route": "contracts.edit",
+      "description": "Editar los Contratos",
+      "variant": "success",
+      "is_system": true
+    },
+    {
+      "name": "Eliminar Contratos",
+      "guard_name": "",
+      "route": "contracts.destroy",
+      "description": "Eliminar los Contratos",
+      "variant": "success",
+      "is_system": true
+    }
+  ]

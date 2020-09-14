@@ -1,0 +1,12 @@
+[
+    {
+      "title": "Customer",
+      "description": "",
+      "is_state": true
+    },
+    {
+      "title": "Company",
+      "description": "",
+      "is_state": true
+    }
+]
