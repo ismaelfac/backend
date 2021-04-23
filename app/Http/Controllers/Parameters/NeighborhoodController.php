@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Parameters;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Modelsgenerals\Neighborhood;
 
 class NeighborhoodController extends Controller
 {
@@ -14,7 +15,8 @@ class NeighborhoodController extends Controller
      */
     public function index()
     {
-        //
+        $neighborhoods = Neighborhood::all();
+        return response()->json($neighborhoods);
     }
 
     /**

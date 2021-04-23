@@ -2,84 +2,53 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Profile;
-use Illuminate\Http\Request;
+use App\Http\Requests\ProfileRequest;
+use App\Http\Requests\PasswordRequest;
+use Illuminate\Support\Facades\Hash;
 
 class ProfileController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Show the form for editing the profile.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\View\View
      */
-    public function index()
+    public function edit()
     {
-        //
+        return view('profile.edit');
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Update the profile
      *
-     * @return \Illuminate\Http\Response
+     * @param  \App\Http\Requests\ProfileRequest  $request
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function create()
+    public function update(ProfileRequest $request)
     {
-        //
+        if (auth()->user()->id == 1) {
+            return back()->withErrors(['not_allow_profile' => __('You are not allowed to change data for a default user.')]);
+        }
+
+        auth()->user()->update($request->all());
+
+        return back()->withStatus(__('Profile successfully updated.'));
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Change the password
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param  \App\Http\Requests\PasswordRequest  $request
+     * @return \Illuminate\Http\RedirectResponse
      */
-    public function store(Request $request)
+    public function password(PasswordRequest $request)
     {
-        //
-    }
+        if (auth()->user()->id == 1) {
+            return back()->withErrors(['not_allow_password' => __('You are not allowed to change the password for a default user.')]);
+        }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Profile  $profile
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Profile $profile)
-    {
-        //
-    }
+        auth()->user()->update(['password' => Hash::make($request->get('password'))]);
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Profile  $profile
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Profile $profile)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Profile  $profile
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Profile $profile)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Profile  $profile
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Profile $profile)
-    {
-        //
+        return back()->withPasswordStatus(__('Password successfully updated.'));
     }
 }

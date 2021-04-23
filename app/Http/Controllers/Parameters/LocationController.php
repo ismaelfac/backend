@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Parameters;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Models\Modelsgenerals\Location;
 class LocationController extends Controller
 {
     /**
@@ -14,7 +14,8 @@ class LocationController extends Controller
      */
     public function index()
     {
-        //
+        $locations = Location::all();
+        return response()->json($locations);
     }
 
     /**

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Parameters;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Modelsgenerals\Municipality;
+use App\Models\Modelsgenerals\Municipality;
 
 class MunicipalityController extends Controller
 {
@@ -15,7 +15,8 @@ class MunicipalityController extends Controller
      */
     public function index()
     {
-        //
+        $municipalities = Municipality::all();
+        return response()->json($municipalities);
     }
 
     /**

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Parameters;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Modelsgenerals\Identification;
+use App\Models\Modelsgenerals\Identification;
 
 class IdentificationController extends Controller
 {

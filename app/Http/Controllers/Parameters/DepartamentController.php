@@ -15,7 +15,8 @@ class DepartamentController extends Controller
      */
     public function index()
     {
-
+        $departaments = Departament::all();
+        return response()->json($departaments);
     }
 
     /**
